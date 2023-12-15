@@ -1,10 +1,10 @@
 services:
   web:
     build:
-      context: angular
+      context: lesson_00
       target: builder
     ports:
       - 4200:4200
     volumes:
-      - ./angular:/project
+      - ./lesson_00:/project
       - /project/node_modules
